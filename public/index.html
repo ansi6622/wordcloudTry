@@ -36,7 +36,7 @@
   <body>
     <p>Welcome to the Wordcloud Toy</p>
     <div ng-app="tagcloud-app">
-      <h2><span ng-bind="1 + 1"></span></h2>
+      <h2>If 2 then Angular is On --> <span ng-bind="1 + 1"></span></h2>
       <div id="keyword_cloud" ng-controller="tagCloudCtrl">
         <div class="dataBoxContent">
           <span ng-repeat="word in words" class="cloud_{{ word.size }}" title="Keyword wordSize {{ word.size }} times">{{ word.text }}</span>
